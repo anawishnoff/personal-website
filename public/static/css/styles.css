@@ -1,0 +1,312 @@
+body {
+	position: relative;
+}
+.navbar {
+	text-align: center;
+	background-color: white;
+	min-height: 15vh;
+	clear: all;
+	z-index: 999;
+}
+
+a.navbar-brand {
+	font-family: 'Pacifico', serif;
+	text-decoration: none;
+}
+
+a {
+	text-decoration: underline;
+}
+
+#name {
+	padding-right: 7%;
+	padding-left: 7%;
+}
+
+a#about.nav-link.active {
+	color:#2862bf;
+	text-decoration: none;
+
+}
+
+a#work.nav-link.active{
+ 	color: #d17d34;
+ 	text-decoration: none;
+
+}
+a#resume.nav-link.active{
+	color: #1e9640;
+	text-decoration: none;
+
+}
+a#contact.nav-link.active {
+	color: #c17f0b;
+	text-decoration: none;
+}
+
+
+.subsub-head {
+	font-weight: 600;
+}
+
+.jumbotron {
+	background-color: transparent;
+	margin-bottom: 0;
+	padding-top: 0;
+	font-family: 'Cutive Mono';
+	text-align: center;
+  border-radius: 0;
+}
+.sectionhead {
+	text-align: center;
+  font-weight: bold;
+}
+.vertical-center {
+  min-height: 85%;  
+  min-height: 85vh; 
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+.main {
+	padding-left: 12%;
+	padding-right: 12%;
+}
+.subtext {
+	font-size: 1.5em;
+	font-family: 'Catamaran';
+}
+
+#welcome {
+	font-weight: bold;
+	font-size: 3em;
+}
+
+#bt1 {
+  padding-right: 5px;
+}
+
+.mockups {
+  margin: 10px;
+}
+#contacttext {
+  margin-top: 5%;
+  margin-bottom: 10px;
+}
+
+.sectionheading {
+	font-family: 'Cutive Mono';
+	font-size: 1.75em;
+	font-weight: 700;
+	cursor: pointer;
+}
+.sub-section {
+	margin-top: 3%;
+}
+.bodytext{
+	font-family: 'Catamaran';
+	margin-top: 2%;
+}
+.open::before {
+	display: none;
+	font-family: "Font Awesome 5 Solid";
+	content: "\f107";
+}
+
+.closed::before {
+	display: none;
+	font-family: "Font Awesome 5 Solid";
+	content: "\f105";
+}
+
+#mobileNav {
+  display: none;
+}
+
+#mc1, #mc2{
+  background-position:center;
+  background-size: cover;
+  -o-background-size: cover;
+  height: 200px;
+  padding-bottom: 10px;
+}
+
+  #us1 {
+  background-position:center;
+  background-size: cover;
+  -o-background-size: cover;
+  width: 500px;
+  padding-bottom: 10px;
+}
+
+#respdf {
+   width: 638px;
+   height: 825px; 
+}
+
+@media only screen and (max-width: 993px) {
+  #us1 {
+    background-position:center;
+    background-size: cover;
+    -o-background-size: cover;
+    width: 300px;
+    padding-bottom: 10px;
+  }
+  #respdf {
+    width: 250px; 
+    height: 400px;
+    background-position:center;
+    background-size: cover;
+    -o-background-size: cover;
+  }
+
+  #emaillink {
+    font-size:.8em;
+  }
+  #mockups {
+    display: flex;
+    justify-content: center;
+    width: inherit;
+    overflow: hidden;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  #mc1, #mc2{
+    background-position:center;
+    background-size: cover;
+    -o-background-size: cover;
+    height: 150px;
+    padding-bottom: 10px;
+  }
+  #mobileNav {
+    display: flex;
+    text-align: center;
+  }
+  #desktopNav {
+    display: none;
+  }
+  a#aboutM.nav-link:hover {
+    background-color:rgba(86, 150, 196,.25);
+  }
+  a#workM.nav-link:hover {
+    background-color: rgba(229, 106, 0,.35);
+  }
+  a#resumeM.nav-link:hover {
+    background-color: rgba(125, 173, 117,.40);
+  }
+  a#contactM.nav-link:hover {
+    background-color: rgba(193,127,11,.25);
+  }
+
+  .navbar-toggler:active,.navbar-toggler:focus {
+    outline: 0;
+  }
+  #mobileNav{
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    width:100%;
+  }
+  #nameM{
+    text-align: center;
+  }
+
+  .bodytext {
+    min-width: 100%;
+    font-size: .9em;
+  }
+} 
+
+#name, #nameM {
+  cursor: pointer;
+}
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: -1px;
+  width: 100%;
+  background-color: white;
+/*  border-bottom: 3px solid black;
+*/}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+/*.sticky + .jumbotron {
+  padding-top: 190px;
+}*/
+
+#about2, #work2, #resume2, #contact2 {
+  padding-top: 8vh;
+}
+#about2 {
+  background-color: rgba(86, 150, 196,.25);
+}
+#work2 {
+  background-color: rgba(229, 106, 0,.35);
+}
+#resume2{
+  background-color: rgba(125, 173, 117,.40);
+
+}
+#contact2{
+  background-color: rgba(193,127,11,.25);
+
+}
+/* 
+Source
+Project: Animating Link Underlines
+Author: Tobias Ahlin;
+http://tobiasahlin.com/blog/css-trick-animating-link-underlines/
+*/
+.nav-item > a {
+	position: relative;
+  color: #000;
+  text-decoration: none;
+}
+
+a#about.nav-link:hover {
+	color:#2862bf;
+}
+a#work.nav-link:hover {
+	color:#d17d34;
+}
+a#resume.nav-link:hover {
+	color:#1e9640;
+}
+a#contact.nav-link:hover {
+	color: #c17f0b;
+}
+
+.nav-item > a:hover{
+	color: #000;
+	text-decoration: none;
+
+}
+
+.nav-item > a:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  text-decoration: none;
+
+  background-color: #000;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.nav-item > a:hover:before {
+  visibility: visible;
+  	text-decoration: none;
+
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
